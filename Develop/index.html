@@ -30,6 +30,76 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <div class="row time-block">
+        <div class="col-md-1 hour">
+            9AM
+        </div>
+        <textarea class="col-md-10 description">Class</textarea>
+        <button class="col-md-1 btn saveBtn">Save</button>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-md-1 hour">
+            10AM
+        </div>
+        <textarea class="col-md-10 description">Class</textarea>
+        <button class="col-md-1 btn saveBtn">Save</button>
+      </div>
+      <div class="row time-block">
+        <div class="col-md-1 hour">
+            11AM
+        </div>
+        <textarea class="col-md-10 description">Class</textarea>
+        <button class="col-md-1 btn saveBtn">Save</button>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-md-1 hour">
+            12PM
+        </div>
+        <textarea class="col-md-10 description">Class</textarea>
+        <button class="col-md-1 btn saveBtn">Save</button>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-md-1 hour">
+            1PM
+        </div>
+        <textarea class="col-md-10 description">Class</textarea>
+        <button class="col-md-1 btn saveBtn">Save</button>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-md-1 hour">
+            2PM
+        </div>
+        <textarea class="col-md-10 description">Class</textarea>
+        <button class="col-md-1 btn saveBtn">Save</button>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-md-1 hour">
+            3PM
+        </div>
+        <textarea class="col-md-10 description">Class</textarea>
+        <button class="col-md-1 btn saveBtn">Save</button>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-md-1 hour">
+            4PM
+        </div>
+        <textarea class="col-md-10 description">Class</textarea>
+        <button class="col-md-1 btn saveBtn">Save</button>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-md-1 hour">
+            5PM
+        </div>
+        <textarea class="col-md-10 description">Class</textarea>
+        <button class="col-md-1 btn saveBtn">Save</button>
+      </div>
     </div>
 
     
@@ -42,9 +112,20 @@
 
       console.log(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
 
+      // Display time at top of page
       $('#currentDay').text(moment().format("dddd, MMMM Do YYYY, h:mm a"))
 
-      
+      var timeBlocks = [
+        {
+          hour: 9,
+          event: ""
+        }
+      ];
+
+      // go through the timeblocks
+        // diplay hour
+        // display event
+        // display button
     </script>
   </body>
 </html>
