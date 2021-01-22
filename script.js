@@ -40,10 +40,16 @@ var timeBlocks = [
   },
 ];
 
+// save button will store event in local storage
+// event listener for save button
+$('button').on('click', function () {
+    // input sends to locals storage
+    textArea.val().localStorage.getItem('event');
+})
+
 // timeblock linked to time displayed
 // timeblock changes color based on current time
   // past? 
   // current?
   // future?
 
-// save button will store event in local storage
