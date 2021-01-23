@@ -40,7 +40,7 @@ $('#currentDay').text(moment().format("dddd, MMMM Do YYYY, h:mm a"))
 //   },
 // ];
 
-
+// timeblocks will display color depending on time from monitor.js
 $('.description').each(function () {
     // declare var, moment data
     var currentHour = moment().hours();
@@ -60,6 +60,13 @@ $('.description').each(function () {
     }
 });
 
+// initialize previously saved elements on page upon loading
+// function init() {
+//     if (localStorage.getItem('textBlock', temporary)) {
+//         getEvent;
+//     }
+// }
+
 // save button will store event in local storage
 // event listener for save button
 $('button').on('click', function () {
@@ -71,24 +78,32 @@ $('button').on('click', function () {
     console.log(input);
     // set input
     // create object for hours, input
-    var temp = {
+    var temporary = {
         hour: hour,
         input: input
         }
+    // $('#'+hour).val(getEvent[hour - 9].input);   
     // get input, allow to fill empty array
-    var getEvent = JSON.parse(localStorage.getItem('timeBlock')) || [];
+    var getEvent = JSON.parse(localStorage.getItem('textBlock', temporary)) || [];
     // push temp output into array
-    getEvent.push(temp)
+    getEvent.push(temporary)
     // set item as JSON string
-    localStorage.setItem('timeBlock', JSON.stringify(getEvent));
+    localStorage.setItem('textBlock', JSON.stringify(getEvent));
     // textArea.val().localStorage.getItem('event');
 });
 
     // localStorage.setItem('timeBlock', JSON.stringify(timeBlocks));
 
 // var that will call parse function
-var getEvent = JSON.parse(localStorage.getItem('timeBlock')) || [];
-$('#13').val();
+var getEvent = JSON.parse(localStorage.getItem('textBlock')) || [];
+
+console.log(getEvent[0].input);
+
+// display in textblock
+// $('#9').val(getEvent[i].input);
+
+
+// $('#13').val();
 
 // function saveLastGrade() {
 //     // Save related form data as an object
