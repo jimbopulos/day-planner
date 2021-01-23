@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
   </head>
-
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
@@ -35,6 +34,7 @@
           9AM
         </div>
         <textarea class="col-md-10 description" id="9"></textarea>
+        <button class="col-md-1 btn saveBtn">Save</button>
         <button class="col-md-1 btn saveBtn" data-hour="9">Save</button>
       </div>
 
@@ -43,6 +43,7 @@
           10AM
         </div>
         <textarea class="col-md-10 description" id="10"></textarea>
+        <button class="col-md-1 btn saveBtn">Save</button>
         <button class="col-md-1 btn saveBtn" data-hour="10">Save</button>
       </div>
       <div class="row time-block">
@@ -50,6 +51,7 @@
           11AM
         </div>
         <textarea class="col-md-10 description" id="11"></textarea>
+        <button class="col-md-1 btn saveBtn">Save</button>
         <button class="col-md-1 btn saveBtn" data-hour="11">Save</button>
       </div>
 
@@ -58,6 +60,7 @@
           12PM
         </div>
         <textarea class="col-md-10 description" id="12"></textarea>
+        <button class="col-md-1 btn saveBtn">Save</button>
         <button class="col-md-1 btn saveBtn" data-hour="12">Save</button>
       </div>
 
@@ -66,6 +69,7 @@
           1PM
         </div>
         <textarea class="col-md-10 description" id="13"></textarea>
+        <button class="col-md-1 btn saveBtn">Save</button>
         <button class="col-md-1 btn saveBtn" data-hour="13">Save</button>
       </div>
 
@@ -74,6 +78,7 @@
           2PM
         </div>
         <textarea class="col-md-10 description" id="14"></textarea>
+        <button class="col-md-1 btn saveBtn">Save</button>
         <button class="col-md-1 btn saveBtn" data-hour="14">Save</button>
       </div>
 
@@ -82,6 +87,7 @@
           3PM
         </div>
         <textarea class="col-md-10 description" id="15"></textarea>
+        <button class="col-md-1 btn saveBtn">Save</button>
         <button class="col-md-1 btn saveBtn" data-hour="15">Save</button>
       </div>
 
@@ -90,6 +96,7 @@
           4PM
         </div>
         <textarea class="col-md-10 description" id="16"></textarea>
+        <button class="col-md-1 btn saveBtn">Save</button>
         <button class="col-md-1 btn saveBtn" data-hour="16">Save</button>
       </div>
 
@@ -98,20 +105,18 @@
           5PM
         </div>
         <textarea class="col-md-10 description" id="17"></textarea>
-        <button class="col-md-1 btn saveBtn" data-hour="17">Save</button>
+        <button class="col-md-1 btn saveBtn">Save</button>
+        <button class="col-md-1 btn saveBtn" data-hour="10">Save</button>
       </div>
     </div>
 
     
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-
     <script>
       moment().format();
       // console.log(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
     </script>
     <script src="../script.js"></script>
-    <script src="../scriptv2.js"></script>
   </body>
 </html>
