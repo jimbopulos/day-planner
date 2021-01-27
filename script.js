@@ -84,7 +84,7 @@ $('button').on('click', function () {
         }
     // $('#'+hour).val(getEvent[hour - 9].input);   
     // get input, allow to fill empty array
-    var getEvent = JSON.parse(localStorage.getItem('textBlock', temporary)) || [];
+    var getEvent = JSON.parse(localStorage.getItem('textBlock')) || [];
     // push temp output into array
     getEvent.push(temporary)
     // set item as JSON string
@@ -96,8 +96,11 @@ $('button').on('click', function () {
 
 // var that will call parse function
 var getEvent = JSON.parse(localStorage.getItem('textBlock')) || [];
+for (var i = 0; i < getEvent.length; i++) {
+    $('#'+getEvent[i].hour).val(getEvent[i].input)
+};
 
-console.log(getEvent[0].input);
+// console.log(getEvent[0].input);
 
 // display in textblock
 // $('#9').val(getEvent[i].input);
