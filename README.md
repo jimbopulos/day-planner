@@ -4,6 +4,6 @@ We created a page so that a user may plan their work day. The features of this p
 
 Leveraging local storage, it was also a goal of this application to allow users to save their inputs in each respective time block. In the event that a user needs to reload the page, or accidentally closes out of it, they need not worry. Their input in the text area of their time blocks will be saved, even upon the page reloading.
 
-![Day Planner screenshot](day-planner-screenshot.png)
+![Day Planner screenshot](day-planner-screenshot2.png)
 
 Link to the application: **[jimbopulos.github.io/day-planner](https://jimbopulos.github.io/day-planner/)**
