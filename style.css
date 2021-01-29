@@ -2,6 +2,15 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+    to bottom right,
+    #9dd3f3,
+    rgb(228, 88, 228)
+  );
 }
 
 textarea {
@@ -9,8 +18,10 @@ textarea {
   border: 2px solid black;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
   padding: 10px;
+  border-radius: 3px;
 }
 
 .jumbotron {
@@ -32,14 +43,14 @@ textarea {
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
+  /* height: 80px; */
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: #9dd3f3;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border: 2px solid #000000;
+  border-radius: 5px;
 }
 
 .past {
@@ -58,10 +69,8 @@ textarea {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  border-radius: 15px;
+  background-color: dodgerblue;
   color: white;
 }
 
@@ -72,13 +81,9 @@ textarea {
 
 @media (max-width: 576px) {
   .container {
-    width: 80%;
-  }
-  textarea {
-    resize: vertical;
+    width: 90%;
   }
   .hour {
-    resize: vertical;
     text-align: center;
   }
 }
