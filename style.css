@@ -69,3 +69,16 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+@media (max-width: 576px) {
+  .container {
+    width: 80%;
+  }
+  textarea {
+    resize: vertical;
+  }
+  .hour {
+    resize: vertical;
+    text-align: center;
+  }
+}
