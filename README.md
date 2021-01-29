@@ -8,6 +8,7 @@ Leveraging local storage, it was also a goal of this application to allow users 
 - HTML
 - CSS
 
-![Day Planner screenshot](day-planner-screenshot2.png)
+![Day Planner screenshot Deskstop](Day-Planner-Desktop.png)
+![Day Planner screenshot Mobile](Day-Planner-Mobile.png)
 
 Link to the application: **[jimbopulos.github.io/day-planner](https://jimbopulos.github.io/day-planner/)**
